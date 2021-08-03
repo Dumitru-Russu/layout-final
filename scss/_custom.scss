@@ -1,0 +1,251 @@
+body{
+   // background-color: darkblue;
+}
+.navbar-top{
+    position: absolute;
+    z-index: 2000;
+    width: 100%;
+}
+
+.nav-link.home:hover+ul,
+.nav-list.home:hover,
+.nav-link.page:hover+ul,
+.nav-link.portfolios:hover+.portfolio-block, 
+.nav-link.shops:hover+.nav-list.shop,
+.nav-link.blogs:hover+.nav-list.blog {
+    display: block;
+}
+.nav-link.home{
+    position: relative;
+}
+.nav-link.home::before{
+    width: 50%;
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 4px;
+    left: 0px;
+    border-bottom: 1px solid $secondary;
+    margin-left: 18px;
+
+}
+
+
+
+
+.h-100vh{
+    height: 100vh;
+}
+.fit-cover{
+    object-fit: cover;
+}
+.mt-maxim{
+    margin-top: 10%;
+    margin-left: 45%;
+}
+.decorative {
+    font-family: $dr-font-family-decor;
+}
+h3{
+    font-size: 50px!important;
+}
+h2{
+    font-size: 70px!important;
+    text-transform: uppercase;
+}
+
+.slow-zoom-out{
+
+    animation: slow-zoom-out 20s;
+   
+    @keyframes slow-zoom-out {
+        from{
+           transform: scale(1.2);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+}
+.slow-zoom-in{
+
+    animation: slow-zoom-in 20s;
+   
+    @keyframes slow-zoom-in {
+        from{
+           transform: scale(1.0);
+        }
+        to {
+            transform: scale(1.2);
+        }
+    }
+}
+.appear{
+
+    animation: appear 5s;
+
+    @keyframes appear{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+}
+
+#carouselExampleCaptions{
+    .carousel-inner,
+    .carousel-item
+    {
+        height: 100%;
+    }
+
+
+    .carousel-caption {
+        margin: auto;
+       top: 1.25rem; 
+       left: auto;
+    }
+
+
+    img{
+        height: 100%;
+    }
+}
+
+
+.navbar-brand img{
+    height: auto;
+}
+
+.nav-list {
+    position: absolute;
+    list-style: none;
+    text-transform:capitalize;
+    background-color: white;
+    padding: 20px 35px 20px 20px;
+    margin-left: -18px;
+    display: none;
+    margin-top: 40px;
+    
+}
+.nav-list a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Cormorant', serif;
+}
+.nav-list.pages{
+    padding-right: 60px;
+}
+.nav-list.shop{
+    display: none;
+    padding: 30px 45px 30px 30px;
+
+}
+.nav-list.shop-lay-list{
+    display: inline-block;
+    width: 300px;
+}
+.portfolio-block{
+    background-color: white;
+    position: absolute;
+    margin-top: 60px;
+
+    margin-left: -58vw;
+    width: 100vw;
+    height: 350px;
+    display: none;
+}
+.portfolio-block.elements{
+    margin-left: -78vw;
+}
+
+
+
+.portfolio-list{
+   list-style: none;
+   display: inline-block;
+   position: absolute;
+}
+.portfolio-list li{
+    //display: inline-block;
+}
+.portfolio-list a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: 'Cormorant', serif; 
+}
+
+.portfolio-list.column-1{
+    padding: 30px 0 20px 0;
+    margin-left: 125px;
+}
+.portfolio-list.column-2{
+    padding: 30px 0 20px 0;
+    margin-left: 500px;
+}
+.portfolio-list.column-3{
+    padding: 30px 0 20px 0;
+    margin-left: 900px;
+}
+.portfolio-list.column-4{
+    padding: 30px 0 20px 0;
+    margin-left: 1200px;
+}
+
+.icons {
+    margin-top: -8px;
+    font-size: 25px;
+}
+#navbarNavDropdown{
+    margin-left: 42%;
+    text-transform: uppercase;
+}
+
+
+
+
+.btn {
+    position: relative;
+    text-transform: uppercase;
+    margin: 5px;
+    //padding: 2rem 3rem 2rem 3rem!important;
+    &::after{
+       content: "";
+       display: block;
+       position: absolute;
+       top: -5px;
+       right: -5px;
+       bottom: -5px;
+       left: -5px;
+       border-width: 1px;
+       border-style: solid;
+       border-color: inherit;
+       
+      // z-index: -1;
+    }
+}
+
+
+.btn-outline-primary{
+    background-color: black!important;
+    color: white;
+    &:hover{
+        background-color: #c68b4eff!important;
+        
+    }
+}
+.btn-outline-secondary{
+    &:hover{
+        color: white!important;
+    }
+}
+
