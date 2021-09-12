@@ -1,5 +1,26 @@
 body{
-   // background-color: darkblue;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+a{
+    text-decoration: none!important;
+}
+// nav{
+//    position: fixed!important;
+//    top: 0;
+// }
+body>.position-fixed{
+    bottom: 0;
+    right: 50px;
+    z-index: 3;
+
+
+}
+.arrow-up{
+    font-size: 60px;
+    color: #c68b4eff;
+    bottom: 0;
+    display: inline-block;
 }
 .navbar-top{
     position: absolute;
@@ -249,3 +270,827 @@ h2{
     }
 }
 
+
+
+.slide-2-story{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    height: 90vh;
+    background-image: url(https://dolcino.qodeinteractive.com/wp-content/uploads/2018/11/h1-parallax-1-1.jpg);
+
+}
+.slide-2-story h1:first-child{
+    position: absolute;
+    margin-left: 44%;
+    margin-top: 8rem;
+}
+.slide-2-story h1:nth-child(2){
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 10.3rem;
+    font-size: 50px;
+    font-weight: 600;
+}
+.slide-2-story p:nth-child(3){
+    position: absolute;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 17rem;
+    font-family: 'Cormorant', serif;
+    font-size: 25px;
+}
+
+
+
+
+
+
+.slide-3{
+    height: 50vh;
+    position: relative;
+}
+.background{
+    background-image: url(https://dolcino.qodeinteractive.com/wp-content/uploads/2018/11/h1-parallax-2-1.jpg);
+    top: -120%;
+    height: 200%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.slide-3 h1{
+    text-align: center;
+    position: relative;
+    top: 250px;
+    font-size: 90px;
+
+}
+
+
+.slide-4{
+    z-index: 1;
+    margin-top: -200px;
+    background-color: #fff;
+   // height: 100vh;
+}
+.slide-4 h1:first-child{
+    margin-top: 500px;
+    font-size: 50px;
+}
+.slide-4 h1:nth-child(2){
+    font-size: 50px;
+    font-weight: 600;
+}
+.slide-4 p:nth-child(3){
+    margin-top: 4rem;
+    font-family: 'Cormorant', serif;
+    font-size: 25px;
+}
+.slide-4 p:nth-child(4){
+    font-family: 'Cormorant', serif;
+    font-size: 25px;
+}
+.slide-4 img{
+    width: 250px;
+
+}
+.slide-4 h3{
+    font-size: 20px!important;
+    font-weight: 500;
+}
+.s-4-txt{
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-size: 25px;
+     a:hover{
+        color: #c68b4eff!important; 
+     }
+}
+.slide-4 h3 a:hover{
+    color: #c68b4eff!important;
+}
+.slide-4 .image-s-4{
+    position: relative;
+
+}
+.slide-4 .image-s-4::before{
+    content: "ADD TO CART";
+    color: #c68b4eff!important;   
+     padding-top: 65px;
+    position: absolute;
+    display: none;
+    width: 150px;
+    height: 150px;
+    background-color: #fffd;
+    border-radius: 75px;
+    left: 50px;
+    top: -50px;
+    bottom: 0;
+
+}
+.slide-4 .image-s-4:hover::before{
+    display: block;
+}
+
+
+//specific
+#portofolio-images{
+    figure{
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+
+
+    h3{
+        margin: 0;
+        font-size: 20px!important;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    p{
+        margin: 0;
+        font-family: 'Cormorant', serif;
+        font-style: italic;
+        font-size: 20px;
+    }
+    
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+        transform: scale(1.1);
+        
+    }
+    figcaption{
+        background-color: #fff;
+        width: 276px;
+        height: 165px;
+        text-align: center;
+        position: relative;
+        top: 170px;
+        left: 45px;
+        opacity: 0;
+        transition: 0.5s;
+     //   padding-top: 50px;
+        div{
+            width: 70%;
+            height: 70%;
+            position: absolute;
+            border: 1px solid #c68b4eff;
+            top: 25px;
+            left: 37px;
+            padding-top: 25px;
+            
+        }
+    }
+    #pear-fig{
+        top: 539px;
+    }
+
+}
+figure:hover figcaption{
+    opacity: 1;
+}
+
+figure:hover img{
+ animation: slow-zoom-out-2 1.2s;
+ animation-fill-mode:forwards;
+
+ @keyframes slow-zoom-out-2 {
+    0%{
+       transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+}
+}
+.wed-ref:hover{
+    color: #c68b4eff;
+}
+
+
+
+//common
+.x-grid{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 1em;
+    height: 100vh;
+
+}
+.x-grid{
+    .x-col-3{
+        grid-column: auto/span 3;
+    }
+    .x-row-2{
+        grid-row: auto/span 2;
+    }
+}
+.x-index{
+    z-index: 10;
+}
+.cormo{
+    font-family: 'Cormorant', serif;
+}
+
+
+.product-prices{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    height: 140vh;
+    background-image: url(https://dolcino.qodeinteractive.com/wp-content/uploads/2018/11/h1-parallax-3.jpg);
+
+}
+.product-prices h1:first-child{
+    position: absolute;
+    margin-left: 44%;
+    margin-top: 8rem;
+}
+.product-prices h1:nth-child(2){
+    position: absolute;
+    margin-left: 38%;
+    margin-top: 10.3rem;
+    font-size: 60px;
+    font-weight: 600;
+}
+.product-prices p:nth-child(3){
+    position: absolute;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 19rem;
+    font-family: 'Cormorant', serif;
+    font-size: 25px;
+}
+
+.product-prices ul{
+    width: 305px;
+    height: 433px;
+    top: 500px;
+    border: 1px solid #bcd9;
+}
+.product-prices ul:first-of-type{
+    left: 50px;
+}
+.product-prices ul:nth-of-type(2){
+    left: 400px;
+}
+.product-prices ul:nth-of-type(3){
+    left: 750px;
+}
+.product-prices ul:nth-of-type(4){
+    left: 1100px;
+}
+
+
+
+.borders-l{
+    width: 50px;
+    height: 3px;
+    border-bottom: 1px solid #bcd9;
+}
+.borders-r{
+    width: 50px;
+    height: 3px;
+    border-bottom: 1px solid #bcd9;
+    margin-left: 253px;
+}
+
+.product-prices .price-new{
+    height: 500px;
+    margin-top: -25px;
+    border-color: #c68b4eff;
+}
+.price-new .borders-l,
+.price-new .borders-r{
+    border-color: #c68b4eff;
+}
+.details{
+    position: relative;
+}
+.details:hover::before{
+    width: 120px;
+    left: 87px;
+
+}
+
+.details::before{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 30px;
+    background-color: #c68b4eff;
+    top: 23px;
+    left: 135px;
+    transition: 0.5s;
+
+}
+.details a{
+    color: #c68b4eff;
+    font-size: 13px;
+    letter-spacing: 5px;
+}
+
+
+
+.para-prices{
+    position: relative;
+    height: 130vh;
+    padding-top: 80px;
+    h1{
+        font-weight: 600;
+        letter-spacing: 3px;
+        margin-bottom: 70px;
+    }
+    h1,ul,a{
+        margin-left: 150px;
+    }
+    a{
+        margin-top: 20px;
+    }
+
+}
+.bg-parallax{
+    background-image: url("https://dolcino.qodeinteractive.com/wp-content/uploads/2018/11/h1-parallax-4.jpg");
+    background-repeat: no-repeat;
+    height: 200%;
+    width: 100%;
+    z-index: -1;
+    top: -200%;
+
+
+    position: absolute;
+
+
+
+}
+
+.traditions{
+    height: 170vh;
+  //  background-color: #fff;
+    margin-top: -300px;
+    background-image: url(https://dolcino.qodeinteractive.com/wp-content/uploads/2018/11/h1-parallax-5-1.jpg);
+
+    h1:nth-child(2){
+        font-size: 50px;
+        font-weight: 600;
+        letter-spacing: 3px;
+
+    }
+
+
+}
+
+
+
+.x-fw-b{
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+
+// DOUBLE CAROUSEL
+
+.double-carousel #firstCarousel img{
+    height: 300px;
+    width: 400px!important;
+    object-fit: cover;
+  }
+  .double-carousel #firstCarousel .carousel-indicators{
+    /* justify-content: space-between; */
+  }
+  .double-carousel #firstCarousel .carousel-item{
+    /* background-color: #333; */
+  }
+
+  .double-carousel #secondCarousel .carousel-item{
+    height: 200px;
+  }
+  .double-carousel #myTab{
+    overflow: hidden;
+  }
+  .double-carousel .carousel-indicators{
+    top: 350px;
+    width: 85%;
+ }
+  .double-carousel .carousel-indicators button{
+    background-color: #ffff;
+    /* margin-left: 600px!important; */
+    position: relative;
+  }
+  .double-carousel .carousel-indicators button:nth-child(1){
+    left: 150px;
+  }
+  .double-carousel .carousel-indicators button:nth-child(2){
+    left: 300px;
+  }
+  .double-carousel .carousel-indicators button:nth-child(3){
+   left: 450px;
+  }
+  .double-carousel .carousel-indicators button:nth-child(4){
+   left: 750px;
+  }
+  .double-carousel .carousel-indicators button:nth-child(5){
+   left: 960px;
+  }
+  .double-carousel .carousel-indicators button:nth-child(6){
+
+  }
+  .double-carousel .carousel-indicators button::after{
+    content: "▲";
+    display: inline-block;
+    position: absolute; 
+    top: 30px;  
+    right: 15px;   
+    color: #c68b4eff; 
+    font-size: 19px;  
+    z-index: 100;
+}
+    .double-carousel .carousel-indicators button::before{
+      content: "";
+      display: inline-block;
+      position: absolute;
+       height: 3px;
+      /* width: 400px;  */
+      background-color: gray;
+      top: 47px;
+      right: 508px;
+
+    }
+    .double-carousel .carousel-indicators button:nth-child(1)::before{
+       width: 250px;
+       background-color: #c68b4eff;
+       z-index: 50;
+
+    }
+    .double-carousel .carousel-indicators button:nth-child(2)::before{
+       width: 186px;
+    }
+    .double-carousel .carousel-indicators button:nth-child(3)::before{
+       width: 372px;
+    }
+    .double-carousel .carousel-indicators button:nth-child(4)::before{
+       width: 800px;
+    }
+    .double-carousel .carousel-indicators button:nth-child(5)::before{
+      width: 1200px;
+    }
+    .double-carousel .carousel-indicators [data-bs-target]{
+       opacity: 1;
+    }
+    .double-carousel .carousel-indicators .active::before{
+         background-color: #c68b4eff!important;
+         z-index: 10;
+
+    }
+
+
+
+
+    .double-carousel h5,p{
+    color: #111;
+ }
+ .double-carousel .carousel-caption>p, .double-carousel .carousel-caption>h5{
+   margin-left: 300px;
+ }
+
+ .double-carousel #myTab{
+   justify-content: space-between;
+   position: absolute;
+   top: 385px;
+   width: 90vw;
+   border: 0;
+ }
+ .double-carousel button.nav-link{
+   border: 0!important;
+
+
+ }
+ .double-carousel button.nav-link i.lni{
+   color: #c68b4eff;
+   font-weight: 700;
+ }
+
+//DOUBLE CAROUSEL-end
+.photo{
+    overflow: hidden;
+}
+.photo img{
+    width: 300px;
+    height: 543px;
+    object-fit: cover;
+    transform: scale(1.1);
+}
+.photo:hover .photo-title{
+    display:block;
+}
+.photo:hover img{
+    animation: slow-zoom-out-2 1.2s;
+    animation-fill-mode:forwards;
+}
+
+.photo-team{
+    margin-top: -350px;
+}
+.photo-title{
+    width: 300px;
+    height: 543px;
+padding-left: 10px;
+padding-top: 400px;
+top: 0;
+background-color: #fffb;
+display: none;
+
+h2{
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+    
+}
+.photo-title{
+    z-index: 300;
+
+}
+.special-icon:hover{
+    color: black;
+
+}
+// @for $n from 1 through 5 {
+//     .photo-title:nth-of-type($n){
+//         left:calc(($n-1) * 300px);
+//     }
+
+// }
+
+
+
+.form{
+    margin-top: -7px;
+    padding-top: 170px;
+    background-image: url(https://dolcino.qodeinteractive.com/wp-content/uploads/2018/11/h1-parallax-6-1.jpg);
+    height: 150vh;
+    h1:first-child{
+        font-size: 50px!important;
+    }
+    h1:nth-child(2){
+        font-size: 50px;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+    p:first-of-type{
+        margin-top: 50px;
+    }
+}
+.form-input{
+    
+     display: inline-block;
+    input{
+        padding: 10px;
+        display: inline-block;
+        width: 470px;
+
+    }
+}
+.form-input:first-of-type{
+    top: 50px;
+    left: 270px;
+}
+.form-input:nth-of-type(2){
+    top: 50px;
+    left: 760px;
+}
+.form-input:nth-of-type(3){
+    left: 270px;
+    top: 120px;
+}
+.form-input:nth-of-type(4){
+    left: 760px;
+    top: 120px;
+}
+form textarea{
+    padding: 10px;
+    top: 200px;
+    left: 270px;
+}
+.form-button{
+    background-color: #c68b4eff;
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: 600;
+    position: absolute;
+    top: 450px;
+    left: 660px;
+    &:hover{
+        background-color: #fff;
+        color: #c68b4eff!important;
+    }
+
+}
+.video{
+ height: 100vh;
+}
+.ms-max-2{
+    margin-left: 10rem;
+}
+.ms-max-1{
+    margin-left: 7.5rem;
+}
+
+
+.testimonials{
+    height: 100vh;
+    padding-top: 100px;
+    h1:first-child{
+        font-size: 50px!important;
+    }
+    h1:nth-child(2){
+        font-size: 50px;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+}
+#carouselTestimonials{
+    // background-color: #345;
+    height: 50vh;
+    width: 50%;
+    margin-left: 25%;
+    .carousel-inner{
+        height: 100%;
+        
+    }
+    .par-1{
+        top: 70px;
+        left: -100px;
+       
+    }
+    .par-2{
+        top: 100px;
+        left: -80px;
+    }
+    .par-3{
+        top: 130px;
+        left: 90px;
+    }
+    h5{
+        top: 200px;
+        left: 170px;
+        color: black;
+        letter-spacing: 2px;
+    }
+    h6{
+        top: 225px;
+        left: 200px;
+        color: black;
+    }
+    .carousel-indicators{
+        top: 250px;
+        left: 775px;
+    }
+    .carousel-indicators [data-bs-target]{
+        background-color: transparent;
+        border-color: transparent;
+    }
+}
+
+.contact{
+    height: 80vh;
+    background-color: #000;
+    a:hover{
+        color: #c68b4eff!important;
+    }
+    p{
+      margin: 0;
+    }
+    .map{
+      position: absolute;
+      top: -15px;
+    }
+}
+.social-icons i::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border: 1px solid #c68b4eff;
+    width: 30px;
+    height: 30px;
+    transform: translateX(-25px) translateY(-5px) rotate(45deg);
+
+}
+.social-icons i{
+   color: #c68b4eff;
+   position: relative;
+   display: inline-block;
+}
+
+.social-icons i:hover::after{
+    background-color: #c68b4eff;
+z-index: -1;
+}
+.social-icons i:hover{
+    color: black!important;
+    z-index: 100; 
+ }
+.part-2{
+    top: 350px;
+    left: 100px;
+}
+.part-2 button{
+    border: 0!important;
+    background-color: #fff0;
+    position: relative;
+    &:nth-child(1){
+        top: 7px;
+    }
+    &:nth-child(2){
+       left: 110px;
+top: 7px;
+    }
+    &:nth-child(3){
+        left: 320px;
+top: 7px;
+    }
+    &:nth-child(4){
+        left: 540px;
+top: 7px;
+    }
+    &:nth-child(5){
+        left: 620px;
+top: 7px;
+    }
+}
+
+
+  .double-carousel .part-2 button::after{
+    content: "▲";
+    display: inline-block;
+    position: absolute; 
+    top: 30px;  
+    right: 15px;   
+    color: #c68b4eff; 
+    font-size: 19px;  
+    z-index: 100;
+}
+// .double-carousel .part-2 button:nth-child(1):after{
+//     left: -205px;
+// }
+// .double-carousel .part-2 button:nth-child(1):after{
+//     left: -150px;
+// }
+    .double-carousel .part-2 button::before{
+      content: "";
+      display: inline-block;
+      position: absolute;
+       height: 3px;
+      background-color: gray;
+      top: 47px;
+      right: 508px;
+      left: 0;
+
+
+
+  }
+  .double-carousel .part-2 button:active::before{
+      background-color: #c68b4eff;
+      z-index: 10;
+  }
+
+
+  .double-carousel .part-2 button:nth-child(1)::before{
+    width: 100px;
+
+
+  }
+  .double-carousel .part-2 button:nth-child(2)::before{
+      width: 300px;
+      left: -165px;
+
+}
+.double-carousel .part-2 button:nth-child(3)::before{
+      width: 500px;
+      left: -431px;
+
+}
+.double-carousel .part-2 button:nth-child(4)::before{
+      width: 900px;
+      left: -709px;
+
+}
+.double-carousel .part-2 button:nth-child(5)::before{
+      width: 1200px;
+      left: -850px;
+
+}
+
+
+
+//     .double-carousel .carousel-indicators button:nth-child(1)::before{
+//        width: 250px;
+//        background-color: #c68b4eff;
+//        z-index: 50;
+
+//     }
